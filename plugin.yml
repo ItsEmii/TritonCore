@@ -1,0 +1,94 @@
+name: hcf
+version: 4.0.0
+api: 5.0.0
+main: hcf\HCFLoader
+author: "@juqn"
+
+permissions:
+
+  autofeed.command:
+    default: op
+
+  brewer.command:
+    default: true
+    
+  feed.command:
+    default: op
+
+  fix.command:
+    default: op
+
+  fix.player.command:
+    default: op
+  
+  fly.command:
+    default: op
+
+  faction.command.claimfor:
+    default: op
+
+  god.command:
+    default: op
+
+  kit.command.create:
+    default: op
+
+  kit.command.delete:
+    default: op
+
+  kit.command.edit:
+    default: op
+
+  kit.command.editcontent:
+    default: op
+
+  kit.command.give:
+    default: op
+
+  kit.command.setitem:
+    default: op
+
+  koth.command:
+    default: true
+
+  koth.command.addkey:
+    default: op
+
+  koth.command.claim:
+    default: op
+
+  koth.command.create:
+    default: op
+
+  koth.command.delete:
+    default: op
+
+  koth.command.setcapzone:
+    default: op
+
+  koth.command.setcoords:
+    default: op
+
+  koth.command.setpoints:
+    default: op
+
+  koth.command.start:
+    default: op
+
+  koth.command.stop:
+    default: op
+
+  near.command:
+    default: op
+
+  op.cmd:
+    default: op
+
+  player.feed.command:
+    default: op
+
+  rename.command:
+    default: op
+    
+  use.player.command:
+    default: true

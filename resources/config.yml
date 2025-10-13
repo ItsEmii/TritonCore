@@ -1,0 +1,59 @@
+---
+motd: '&r&l&5Legends MC&r'
+camp.timer: 30
+amethyst.motion: 2
+feather.motion: 2
+koth.webhook: ""
+admin.webhook: "https://discord.com/api/webhooks/1408152866266546277/Po4z04Lyks_8hNBL-YjMlg9KfoOFTCq07Mcm7gaKRnkJWnf1trhbckvtlIA0ZnPWnC2K"
+raid.webhook: ""
+faction.max.members: 4
+facion.regeneration.offline: false
+scoreboard.title:
+- "§l§5            L§r       "
+- "§l§5           LE§r      §l§cE"
+- "§l§5          LEG§r     §l§cEv"
+- "§l§5         LEGE§r    §l§cEvi"
+- "§l§5        LEGEN§r   §l§cEvil"
+- "§l§5       LEGEND§r   §l§cEvil"
+- "§l§5      LEGENDS§r   §l§cEvil"
+- "§l§5     LEGENDS §r   §l§cEvil"
+- "§l§5    LEGENDS  §r   §l§cEvil"
+- "§l§5   LEGENDS   §r   §l§cEvil"
+- "§l§5  LEGENDS    §r   §l§cEvil"
+- "§l§5 LEGENDS     §r   §l§cEvil"
+- "§l§5LEGENDS      §r   §l§cEvil"
+- "§l§5EGENDS       §r   §l§cEvil"
+- "§l§5GENDS        §r   §l§cEvil"
+- "§l§5ENDS         §r   §l§cEvil"
+- "§l§5NDS          §r   §l§cEvil"
+- "§l§5DS           §r   §l§cEvil"
+- "§l§5S            §r   §l§cEvil"
+- "§l§5             §r   §l§cEvil"
+- "§l§5             §r   §l§cEvi"
+- "§l§5             §r   §l§cEv"
+- "§l§5             §r   §l§cE"
+- "§l§5             §r    "
+scoreboard.placeholder: ''
+
+# Mensajes
+join.message: '§6[§a+§6] §f{player} §a se unió al servidor'
+quit.message: '§6[§c-§6] §f{player} §c salió del servidor'
+
+# Keyall
+Keyall:
+  Angel: 5
+  Blessed: 15
+  Fall: 25
+  Rare: 35
+  Items: 40
+  Starter: 45
+
+# Keyall OP
+KeyallOP:
+  Evil: 10
+  Angel: 30
+  Blessed: 35
+  Fall: 40
+  Rare: 45
+  Items: 55
+  Starter: 64
