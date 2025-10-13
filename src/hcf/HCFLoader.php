@@ -51,14 +51,14 @@ class HCFLoader extends PluginBase {
     public static array $bard_allow = [];
     public static array $mague_allow = [];
     public static array $archer_allow = [];
-    public static string $prefix = "§e[§5Legends§e] §r";
+    public static string $prefix = "§e[§bTriton§e] §r";
 
     protected function onLoad(): void {
         self::$instance = $this;
     }
 
     protected function onEnable(): void {
-        $this->getLogger()->notice("§aLegendsCore enabled");
+        $this->getLogger()->notice("§bTritonCore §qenabled");
 
         @mkdir($this->getDataFolder() . "others/");
         @mkdir($this->getDataFolder() . "kits/");
@@ -96,11 +96,6 @@ class HCFLoader extends PluginBase {
         }
 
         $this->getServer()->getNetwork()->setName(TextFormat::colorize($this->getConfig()->get("motd", "Default HCF Server")));
-        $this->getScheduler()->scheduleRepeatingTask(new ClosureTask(function (): void {
-            $this->getProvider()->save();
-            $this->getLogger()->info("HCF data auto-saving...");
-
-        }), 20 * 60 * 60 * 24);
 
         foreach (["me", "kill", "about", "suicide"] as $cmd) {
             $command = $this->getServer()->getCommandMap()->getCommand($cmd);
@@ -155,7 +150,7 @@ class HCFLoader extends PluginBase {
         $this->getProvider()->save();
         $this->disconnectedManager->onDisable();
 
-        $this->getLogger()->notice("§cLegendsCore disabled");
+        $this->getLogger()->notice("§bTritonCore §4disabled");
 
         foreach ($this->getServer()->getOnlinePlayers() as $player) {
 

@@ -1,38 +1,33 @@
 ---
-motd: '&r&l&5Legends MC&r'
+motd: '&r&l&bTriton MC&r'
 camp.timer: 30
 amethyst.motion: 2
 feather.motion: 2
 koth.webhook: ""
 admin.webhook: "https://discord.com/api/webhooks/1408152866266546277/Po4z04Lyks_8hNBL-YjMlg9KfoOFTCq07Mcm7gaKRnkJWnf1trhbckvtlIA0ZnPWnC2K"
-raid.webhook: ""
-faction.max.members: 4
+raid.webhook: "https://discord.com/api/webhooks/1427438782415765596/kv3WcmjnK8N2bdjstCOw3PGhvkefUhHEqQ5oja1eb8jjNZwu3bU4FIUMSzqJigUjrTgS"
+faction.max.members: 7
 facion.regeneration.offline: false
 scoreboard.title:
-- "§l§5            L§r       "
-- "§l§5           LE§r      §l§cE"
-- "§l§5          LEG§r     §l§cEv"
-- "§l§5         LEGE§r    §l§cEvi"
-- "§l§5        LEGEN§r   §l§cEvil"
-- "§l§5       LEGEND§r   §l§cEvil"
-- "§l§5      LEGENDS§r   §l§cEvil"
-- "§l§5     LEGENDS §r   §l§cEvil"
-- "§l§5    LEGENDS  §r   §l§cEvil"
-- "§l§5   LEGENDS   §r   §l§cEvil"
-- "§l§5  LEGENDS    §r   §l§cEvil"
-- "§l§5 LEGENDS     §r   §l§cEvil"
-- "§l§5LEGENDS      §r   §l§cEvil"
-- "§l§5EGENDS       §r   §l§cEvil"
-- "§l§5GENDS        §r   §l§cEvil"
-- "§l§5ENDS         §r   §l§cEvil"
-- "§l§5NDS          §r   §l§cEvil"
-- "§l§5DS           §r   §l§cEvil"
-- "§l§5S            §r   §l§cEvil"
-- "§l§5             §r   §l§cEvil"
-- "§l§5             §r   §l§cEvi"
-- "§l§5             §r   §l§cEv"
-- "§l§5             §r   §l§cE"
-- "§l§5             §r    "
+- "&l&3            &r"
+- "&l&3T&r"
+- "&l&3TR&r"
+- "&l&3TRI&r"
+- "&l&3TRIT&r"
+- "&l&3TRITO&r"
+- "&l&3TRITON&r"
+- "&l&3TRITON &7M&r"
+- "&l&3TRITON &7MA&r"
+- "&l&3TRITON &7MAP&r"
+- "&l&3TRITON &7MAP &32&r"
+- "&l&bTRITON &7MAP 2&r"
+- "&l&bRITON &7MAP 2&r"
+- "&l&bITON &7MAP 2&r"
+- "&l&bTON &7MAP 2&r"
+- "&l&bON &7MAP 2&r"
+- "&l&bN &7MAP 2&r"
+- "&l&b  &7MAP 2&r"
+- "&l&b        &r"
 scoreboard.placeholder: ''
 
 # Mensajes

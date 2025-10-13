@@ -51,7 +51,7 @@ class LeaderboardsCommands extends Command
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         if (!$sender instanceof Player) {
             $sender->sendMessage($prefix . TextFormat::RED . "Este comando solo puede ser usado por jugadores.");

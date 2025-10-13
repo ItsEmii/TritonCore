@@ -28,8 +28,7 @@ class RedeemCommand extends Command
         $dataFolder = HCFLoader::getInstance()->getDataFolder();
 
         $this->file = new Config($dataFolder . "others/reedem.json", Config::JSON, [
-            "mrxedwin400" => ["format" => "§dMrXEdwin400", "redeems" => 0],
-            "phpmyforadmin" => ["format" => "§9phpmyforadmin", "redeems" => 0]
+            "Santi1578mazter" => ["format" => "§dSanti1578mazter", "redeems" => 0],
         ]);
 
         $this->cooldownFile = new Config($dataFolder . "others/reedem_cooldowns.json", Config::JSON, []);

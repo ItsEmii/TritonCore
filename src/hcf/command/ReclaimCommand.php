@@ -15,7 +15,7 @@ use pocketmine\utils\Config;
 class ReclaimCommand extends Command
 {
     private array $reclaims = [
-        "Legend" => [
+        "Triton" => [
             "permission" => "legend.reclaim",
             "rewards" => [
                 ["crate" => "Starter", "amount" => 55],

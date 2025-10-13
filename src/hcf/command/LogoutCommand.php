@@ -48,14 +48,14 @@ class LogoutCommand extends Command
 
             if ($position->distance($sender->getPosition()) > 3) {
                 $session->removeCooldown('logout');
-                $sender->sendMessage("§e[§5Legends§e] §h&cLogout cancelled: you moved.");
+                $sender->sendMessage("§e[§bTritonMC§e]  §h&cLogout cancelled: you moved.");
                 $handler?->cancel();
                 return;
             }
 
             if ($session->getCooldown('logout') === null) {
                 $session->setLogout(true);
-                $sender->kick("§e[§5Legends§e] §h&cYou have successfully logged out.");
+                $sender->kick("§e[§bTritonMC§e] §h&cYou have successfully logged out.");
                 $handler?->cancel();
             }
         }), 20);

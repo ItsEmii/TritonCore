@@ -21,7 +21,7 @@ class FreeRankCommand extends Command
 
     public function execute(CommandSender $sender, string $commandLabel, array $args)
     {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         if (!$sender instanceof Player) {
             $sender->sendMessage($prefix . TextFormat::RED . "Este comando solo puede ser usado por jugadores.");
@@ -44,10 +44,10 @@ class FreeRankCommand extends Command
 
         Server::getInstance()->dispatchCommand(
             new ConsoleCommandSender(Server::getInstance(), Server::getInstance()->getLanguage()), 
-            'ranks set "' . $senderName . '" Decoy 2d'
+            'ranks set "' . $senderName . '" Kraken 2d'
         );
 
         $sender->getSession()->addCooldown('freerank.cooldown', '', 604800, false, false);
-        $sender->sendMessage($prefix . TextFormat::GREEN . "Has obtenido el rango Decoy por 2 días.");
+        $sender->sendMessage($prefix . TextFormat::GREEN . "Has obtenido el rango Kraken por 2 días.");
     }
 }

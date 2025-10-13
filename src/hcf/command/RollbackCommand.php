@@ -25,7 +25,7 @@ class RollbackCommand extends Command {
     }
 
     public function execute(CommandSender $sender, string $label, array $args): bool {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         if (!$sender instanceof Player) {
             $sender->sendMessage($prefix . "§cEste comando solo puede usarse en el juego.");
@@ -55,7 +55,7 @@ class RollbackCommand extends Command {
     }
 
     private function openDeathForm(Player $sender, string $target, \pocketmine\utils\Config $data): void {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         $deaths = $data->get($target, []);
         if (empty($deaths)) {
@@ -68,7 +68,7 @@ class RollbackCommand extends Command {
                 $this->openReasonForm($player, $target, $deathId, $data);
             }
         });
-        $form->setTitle("§l§5Legends §r§8Rollback");
+        $form->setTitle("§l§bTriton §r§8Rollback");
         $form->setContent("§8[§l§c!§r§8] §eSelecciona un rollback para restaurar inventario\n");
         foreach ($deaths as $id => $death) {
             $killer = $death["killer"] !== "Unknown" ? "§l§eJugador§r§7:§4 " . $death["killer"] : "§l§5Causa§r§7:§d " . $death["cause"];
@@ -78,7 +78,7 @@ class RollbackCommand extends Command {
     }
 
     private function openReasonForm(Player $player, string $target, string $deathId, \pocketmine\utils\Config $data): void {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
         $form = new CustomForm(function (Player $p, ?array $result) use ($target, $deathId, $data, $prefix) {
             if ($result === null) return;
             $reason = trim($result[0] ?? "");
@@ -88,13 +88,13 @@ class RollbackCommand extends Command {
             }
             $this->doRollback($p, $target, $deathId, $data, $reason);
         });
-        $form->setTitle("§l§5Legends §r§8Rollback Razón");
+        $form->setTitle("§l§bTriton §r§8Rollback Razón");
         $form->addInput("Escribe la razón del rollback:");
         $player->sendForm($form);
     }
 
     private function doRollback(Player $staff, string $targetName, string $deathId, \pocketmine\utils\Config $data, string $reason): void {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         $deaths = $data->get($targetName, []);
         if (!isset($deaths[$deathId])) {

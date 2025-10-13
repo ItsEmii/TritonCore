@@ -19,7 +19,7 @@ class ListCommand extends Command
 
     public function execute(CommandSender $sender, string $commandLabel, array $args): void
     {
-        $prefix = "§e[§5Legends§e] ";
+        $prefix = "§e[§bTritonMC§e] ";
 
         if (!$sender->hasPermission("use.player.command")) {
             $sender->sendMessage($prefix . TextFormat::RED . "No tienes permiso para usar este comando.");

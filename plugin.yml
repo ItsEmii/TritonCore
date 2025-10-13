@@ -2,7 +2,7 @@ name: hcf
 version: 4.0.0
 api: 5.0.0
 main: hcf\HCFLoader
-author: "@juqn"
+author: "@juqn Updated by @RTJ"
 
 permissions:
 
